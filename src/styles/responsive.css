@@ -1,0 +1,94 @@
+@media (max-width: 650px) {
+  .topbar {
+    padding: 0 17px;
+    height: 67px;
+  }
+  .headerpill {
+    font-size: 8px;
+  }
+  .brand span {
+    font-size: 8px;
+  }
+  main {
+    padding: 0 14px 55px;
+  }
+  .hero {
+    padding: 38px 4px 29px;
+  }
+  .hero h1 {
+    letter-spacing: -2.5px;
+  }
+  .summary {
+    gap: 24px;
+  }
+  .summary strong {
+    font-size: 23px;
+  }
+  .summary span {
+    font-size: 8px;
+  }
+  .rotation {
+    padding: 17px 13px;
+  }
+  .daygrid {
+    gap: 5px;
+  }
+  .daytile {
+    padding: 10px 1px;
+  }
+  .daytile span {
+    font-size: 15px;
+  }
+  .daytile small {
+    font-size: 7px;
+    letter-spacing: 0;
+  }
+  .sessionhead h2 {
+    font-size: 25px;
+  }
+  .exercise {
+    padding: 17px 12px;
+  }
+  .exerciseheader {
+    gap: 10px;
+  }
+  .exercisetitle h3 {
+    font-size: 16px;
+  }
+  .setrow {
+    grid-template-columns: 38px repeat(3, minmax(0, 1fr)) 39px;
+    gap: 5px;
+  }
+  .setrow input {
+    font-size: 13px;
+    padding: 9px 3px;
+  }
+  .checkbtn {
+    width: 31px;
+    height: 34px;
+  }
+  .setname {
+    font-size: 10px;
+  }
+  .panel {
+    padding: 19px 14px;
+  }
+  .setting {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .summary {
+    justify-content: space-between;
+  }
+  .tabs button {
+    padding: 11px 14px;
+  }
+  .range strong {
+    display: inline-block;
+    margin-left: 4px;
+  }
+  .hero p {
+    font-size: 13px;
+  }
+}

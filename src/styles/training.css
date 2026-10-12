@@ -1,0 +1,88 @@
+.rotation {
+  background: #121c2c;
+  border: 1px solid #2a374b;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 33px;
+}
+.sectionhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sectionhead h2,
+.panel h2 {
+  font-family: "Space Grotesk";
+  font-size: 27px;
+  letter-spacing: -0.8px;
+  margin: 7px 0 0;
+}
+.muted {
+  color: #66778d;
+}
+.daycontrols {
+  display: flex;
+  gap: 7px;
+}
+.daycontrols button,
+.iconbtn {
+  background: #1c2a3c;
+  border: 1px solid #344357;
+  color: #c5d2e3;
+  border-radius: 8px;
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+}
+.daygrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 9px;
+  margin-top: 22px;
+}
+.daytile {
+  border: 1px solid #354255;
+  border-radius: 10px;
+  background: #192537;
+  color: #d9e3ee;
+  padding: 13px 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+.daytile span {
+  font-family: "Space Grotesk";
+  font-size: 19px;
+  font-weight: 700;
+}
+.daytile small {
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #8c9bb0;
+  font-weight: 800;
+}
+.daytile.rest {
+  background: #151c29;
+}
+.daytile.active {
+  background: #55d6ad;
+  color: #10291f;
+  border-color: #55d6ad;
+}
+.daytile.active small {
+  color: #24624f;
+}
+.sessionhead {
+  margin-bottom: 22px;
+}
+.sessionhead h2 {
+  font-family: "Space Grotesk";
+  font-size: 30px;
+  letter-spacing: -1px;
+  margin: 9px 0 4px;
+}
+.sessionhead p {
+  margin: 0;
+}

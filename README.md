@@ -54,3 +54,21 @@ The built-in progression is a customized, simplified interpretation of the train
 - Exercise edits persist in local storage; reset the template in Settings.
 - The optional Day 6 lateral raise is included but can be removed.
 - The PWA caches site assets after initial access; external fonts may fall back to system fonts offline.
+
+## Source layout
+
+- `src/main.tsx`: React entry point and production service worker registration.
+- `src/App.tsx`: app shell, navigation, and status messages.
+- `src/components/`: training, history, settings, exercise cards/editors, and header UI.
+- `src/hooks/useTraining.ts`: rotation state, workout drafts, and workout/backup actions.
+- `src/models/training.ts`: shared TypeScript domain types.
+- `src/data/sessions.ts`: the default eight-day exercise plan.
+- `src/lib/storage.ts`: local storage, backup validation, and initial store creation.
+- `src/lib/progression.ts`: progression recommendations.
+- `src/styles/`: base, training, exercise, panel, editor, and responsive styles; `index.css` preserves their cascade order.
+
+## Making changes
+
+Edit the source files and use `npm run dev` to see changes locally. Run `npm run build` before pushing. Every push to `main` automatically starts the GitHub Pages workflow, which builds and deploys the new version. Local edits and commits alone do not deploy. Manually rerun a workflow only when retrying a failed deployment, such as after enabling Pages in repository settings.
+
+Edit files in `src`, rather than generated files in `dist`. Production JavaScript is intentionally bundled and minified; the source stays readable and modular. Workout data keeps the same `strengthlog-v1` storage key through this refactor.

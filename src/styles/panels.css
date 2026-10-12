@@ -1,0 +1,125 @@
+.panel {
+  border: 1px solid #2a374b;
+  background: #121c2c;
+  border-radius: 15px;
+  padding: 26px;
+}
+.panel h2 {
+  margin-bottom: 8px;
+}
+.empty {
+  border: 1px dashed #40536a;
+  padding: 40px;
+  text-align: center;
+  color: #8294a9;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.historylist {
+  display: grid;
+  gap: 11px;
+  margin-top: 23px;
+}
+.historyitem {
+  border: 1px solid #344257;
+  border-radius: 10px;
+  background: #172336;
+}
+.historyitem summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px;
+}
+.historyitem summary::-webkit-details-marker {
+  display: none;
+}
+.historyitem summary strong,
+.historyitem summary small {
+  display: block;
+}
+.historyitem summary small {
+  color: #8b9db2;
+  margin-top: 6px;
+}
+.historybody {
+  padding: 4px 17px 18px;
+}
+.historybody > div {
+  padding: 10px 0;
+  border-top: 1px solid #304054;
+}
+.historybody strong,
+.historybody span {
+  display: block;
+  font-size: 13px;
+}
+.historybody span {
+  color: #9bacc0;
+  margin-top: 5px;
+}
+.historybody p {
+  color: #acbacc;
+}
+.setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 0;
+  border-bottom: 1px solid #2a374b;
+}
+.setting h3 {
+  font-family: "Space Grotesk";
+  margin: 0 0 7px;
+  font-size: 16px;
+}
+.setting p {
+  color: #93a3b7;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.5;
+}
+.secondary {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+  padding: 10px 13px;
+  background: #1d2b3f;
+  border: 1px solid #3a4c61;
+  color: #e0e8f2;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 800;
+}
+.secondary.danger,
+.dangerlink {
+  color: #ffaaa7;
+}
+.guide {
+  margin-top: 34px;
+}
+.guide h3 {
+  font-family: "Space Grotesk";
+  font-size: 22px;
+}
+.guide > div:not(.eyebrow) {
+  border-top: 1px solid #2b394d;
+  padding: 15px 0;
+}
+.guide strong {
+  font-size: 14px;
+}
+.guide p {
+  color: #9baabe;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 7px 0 0;
+}
+.storagewarning {
+  line-height: 1.7;
+  margin-top: 30px;
+}
