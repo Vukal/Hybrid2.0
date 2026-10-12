@@ -1,2 +1,56 @@
-# Hybrid2.0
-Strength training logger
+# StrengthLog — 8-day training PWA
+
+A mobile-first, local-first React + TypeScript workout tracker for a custom asynchronous eight-day strength and hypertrophy rotation.
+
+## Features
+
+- Eight-day rotation with manual day selection and next/previous controls
+- Five workout days and three rest days (including two consecutive rest days at the end)
+- Weighted dips/pull-ups, squat, OHP, RDL, bench, paused variations, and accessories
+- Editable exercises, sets, and rep ranges
+- Set-by-set weights, reps, RPE and completion checkboxes
+- Previous results and simple progression recommendations
+- Workout history and JSON export/import
+- Offline-ready PWA service worker after first online visit
+- No login, API, server, or subscription required
+
+## Run locally
+
+Install Node.js 20+ then:
+
+```bash
+npm ci
+npm run dev
+```
+
+Open the local URL Vite prints. To verify the production build:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Publish to GitHub Pages
+
+1. This project lives in `Vukal/Hybrid2.0`.
+2. Push changes to `main`.
+3. In the repository, open **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+4. The included `.github/workflows/deploy.yml` workflow will build and deploy on each push to `main`.
+5. Your app will appear at `https://vukal.github.io/Hybrid2.0/` after a successful deployment.
+6. On mobile, open the site and use **Add to Home Screen** / **Install app** if your browser offers it.
+
+Vite uses a relative base (`./`) so this project works at GitHub Pages subpaths.
+
+## Storage and backups
+
+Data is stored locally in the browser using `localStorage`. It is **not synced** across devices. Use **Settings → Export** to download a JSON backup and **Import** on another device to transfer it. Import replaces the current device's stored data. Browser data clearing or uninstalling the app may erase workouts.
+
+The built-in progression is a customized, simplified interpretation of the training plan; it is not a direct reproduction of Zlat's guide. The app assumes the minimum added-weight increment for belt-loaded dips/pull-ups is 2.5 kg. Edit exercises and targets to suit your equipment.
+
+## Notes
+
+- A completed workout saves only sets you marked as done; then advances the rotation by one day.
+- A rest day can be completed to advance the rotation without adding a workout to history.
+- Exercise edits persist in local storage; reset the template in Settings.
+- The optional Day 6 lateral raise is included but can be removed.
+- The PWA caches site assets after initial access; external fonts may fall back to system fonts offline.
