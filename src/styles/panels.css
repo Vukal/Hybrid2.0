@@ -99,21 +99,18 @@
 .dangerlink {
   color: #ffaaa7;
 }
-.guide {
-  margin-top: 34px;
-}
-.guide h3 {
+.progression h2 {
   font-family: "Space Grotesk";
   font-size: 22px;
 }
-.guide > div:not(.eyebrow) {
+.progression > div:not(.eyebrow) {
   border-top: 1px solid #2b394d;
   padding: 15px 0;
 }
-.guide strong {
+.progression strong {
   font-size: 14px;
 }
-.guide p {
+.progression p {
   color: #9baabe;
   font-size: 13px;
   line-height: 1.7;

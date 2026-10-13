@@ -1,9 +1,10 @@
-import { Check, Dumbbell, History, Settings2 } from "lucide-react";
+import { Check, Dumbbell, History, Settings2, TrendingUp } from "lucide-react";
 import { useTraining } from "./hooks/useTraining";
 import { AppHeader, TrainingSummary } from "./components/AppHeader";
 import { TrainingView } from "./components/TrainingView";
 import { HistoryView } from "./components/HistoryView";
 import { SettingsView } from "./components/SettingsView";
+import { ProgressionView } from "./components/ProgressionView";
 export default function App() {
   const model = useTraining();
   const { tab, setTab, message, setMessage, stats } = model;
@@ -18,6 +19,12 @@ export default function App() {
             onClick={() => setTab("train")}
           >
             <Dumbbell size={16} /> Train
+          </button>
+          <button
+            className={tab === "progression" ? "selected" : ""}
+            onClick={() => setTab("progression")}
+          >
+            <TrendingUp size={16} /> Progression reference
           </button>
           <button
             className={tab === "history" ? "selected" : ""}
@@ -42,6 +49,7 @@ export default function App() {
           </div>
         )}
         {tab === "train" && <TrainingView model={model} />}
+        {tab === "progression" && <ProgressionView />}
         {tab === "history" && <HistoryView model={model} />}
         {tab === "settings" && <SettingsView model={model} />}
       </main>

@@ -148,11 +148,14 @@ main {
 }
 .tabs {
   display: flex;
+  overflow-x: auto;
   gap: 7px;
   padding: 22px 0 30px;
 }
 .tabs button {
   display: flex;
+  flex-shrink: 0;
+  white-space: nowrap;
   align-items: center;
   gap: 9px;
   border: 1px solid transparent;

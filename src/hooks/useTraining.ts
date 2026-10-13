@@ -4,7 +4,9 @@ import { loadStore, persistStore, isValidStore } from "../lib/storage";
 const blank = (): LoggedSet => ({ weight: "", reps: "", rpe: "", done: false });
 export function useTraining() {
   const [store, setStore] = useState<Store>(loadStore),
-    [tab, setTab] = useState<"train" | "history" | "settings">("train"),
+    [tab, setTab] = useState<"train" | "progression" | "history" | "settings">(
+      "train",
+    ),
     [editing, setEditing] = useState<string | null>(null),
     [draft, setDraft] = useState<Record<string, LoggedSet[]>>({}),
     [notes, setNotes] = useState(""),
