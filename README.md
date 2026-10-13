@@ -45,7 +45,7 @@ Vite uses a relative base (`./`) so this project works at GitHub Pages subpaths.
 
 Data is stored locally in the browser using `localStorage`. It is **not synced** across devices. Use **Settings → Export** to download a JSON backup and **Import** on another device to transfer it. Import replaces the current device's stored data. Browser data clearing or uninstalling the app may erase workouts.
 
-The built-in progression is a customized, simplified interpretation of the training plan; it is not a direct reproduction of Zlat's guide. The app assumes the minimum added-weight increment for belt-loaded dips/pull-ups is 2.5 kg. Edit exercises and targets to suit your equipment.
+The built-in progression is a customized, simplified interpretation of the training plan. The app assumes the minimum added-weight increment for belt-loaded dips/pull-ups is 2.5 kg. Edit exercises and targets to suit your equipment.
 
 ## Notes
 

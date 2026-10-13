@@ -22,7 +22,7 @@ export function ProgressionView() {
       <div>
         <strong>Paused variations</strong>
         <p>
-          2×4–5 at RPE 6–7. Keep pauses controlled. Increase weight only when
+          2×4–6 at RPE 6–7. Keep pauses controlled. Increase weight only when
           technique is consistently crisp.
         </p>
       </div>
